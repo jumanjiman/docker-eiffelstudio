@@ -79,4 +79,16 @@ at http://www.eiffelroom.org/article/installing_eiffelstudio_on_ubuntu
 
 ## License
 
-GPL. See LICENSE in this repo.
+The version of EiffelStudio in this container is GPL (unspecified variant).
+See LICENSE.eiffelstudio in this repo for governance.
+
+**Note**: If you compile source code with this container,
+your binaries include GPL code and therefore are licensed under the GPL.
+If you want your binaries to have any other license,
+purchase a commercial license for EiffelStudio from http://eiffel.com.
+
+All other files in this Git repo are licensed under the MIT license.
+That means you can use this Dockerfile and scripts to
+create a private container with
+your commercially-licensed copy of EiffelStudio.
+See LICENSE.mit in this repo for governance.

@@ -1,4 +1,4 @@
-# EiffelStudio IDE inside a Fedora container
+# EiffelStudio IDE in a Docker container
 
 ## About
 
@@ -9,8 +9,21 @@ you need to have Docker [installed on your machine](http://www.docker.io/getting
 
 In this container:
 
-- EiffelStudio 7.3 GPL  http://www.eiffelstudio.com/
-- Fedora 19 base image is from https://index.docker.io/u/mattdm/fedora/
+- EiffelStudio 7.3 (GPL version) from http://www.eiffelstudio.com/
+- Fedora 19 base image from https://index.docker.io/u/mattdm/fedora/
+- A modern version of Git
+- [tito](https://github.com/dgoodwin/tito) for building RPMs
+- All dependencies needed for the above to be self-sufficient
+
+This Docker container enables you to safely experiment with
+EiffelStudio in an isolated environment that does not
+impact the packages on your host. The container is completely
+self-sufficient and isolated from your host OS. You can
+[throw away the container](https://github.com/jumanjiman/docker-eiffelstudio/tree/readme#cleanup)
+when you're done experimenting.
+
+I built this container so that I can quickly build
+[wd](https://github.com/jumanjiman/wd) on any host that has Docker installed.
 
 ## Recommended usage
 

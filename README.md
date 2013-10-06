@@ -102,6 +102,15 @@ If you have a better approach, please let me know via a
 [new issue](https://github.com/jumanjiman/docker-eiffelstudio/issues/new)
 or a pull request.
 
+### I see an error when starting the container
+
+When I run the container, I get this error:
+
+    lxc-start: No such file or directory - stat(/proc/<pid>/root/dev//console)
+
+I don't know yet why this appears, but it seems to have
+no effect on the container itself.
+
 ## License
 
 The version of EiffelStudio in this container is GPL (unspecified variant).

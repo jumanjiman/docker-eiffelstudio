@@ -21,6 +21,16 @@ in the host OS.
 
 `docker run -i -t -v /tmp:/tmp jumanjiman/eiffelstudio`
 
+## Cleanup
+
+To throw away this container, run:
+
+    docker rmi jumanjiman/eiffelstudio
+
+To throw away cached copies of containers you no longer use:
+
+    docker rm $(docker ps -a -q)
+
 ## To-do
 
 Extend the Dockerfile to create an Ubuntu image based on instructions

@@ -16,3 +16,5 @@ ensures that any work you do inside the container is available
 in the host OS.
 
 `docker run -i -t -v /tmp:/tmp jumanjiman/eiffelstudio`
+
+License: GPL. See LICENSE in this repo.

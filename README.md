@@ -1,4 +1,4 @@
-# EiffelStudio development environment inside a Fedora container
+# EiffelStudio IDE inside a Fedora container
 
 ## About
 

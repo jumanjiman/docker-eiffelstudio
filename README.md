@@ -90,6 +90,18 @@ To throw away cached copies of containers you no longer use:
 Extend the Dockerfile to create an Ubuntu image based on instructions
 at http://www.eiffelroom.org/article/installing_eiffelstudio_on_ubuntu
 
+## Known issues
+
+### Why does this Git repo include a tarball of EiffelStudio?
+
+One can use `apt-get` to install the GPL version of EiffelStudio on
+Ubuntu (see http://www.eiffelroom.org/article/installing_eiffelstudio_on_ubuntu),
+but there is currently no curlable way to retrieve the bits on Fedora.
+IOW, I had to manually grab the tarball at the moment.
+If you have a better approach, please let me know via a
+[new issue](https://github.com/jumanjiman/docker-eiffelstudio/issues/new)
+or a pull request.
+
 ## License
 
 The version of EiffelStudio in this container is GPL (unspecified variant).

@@ -21,6 +21,11 @@ in the host OS.
 
 `docker run -i -t -v /tmp:/tmp jumanjiman/eiffelstudio`
 
+## To-do
+
+Extend the Dockerfile to create an Ubuntu image based on instructions
+at http://www.eiffelroom.org/article/installing_eiffelstudio_on_ubuntu
+
 ## License
 
 GPL. See LICENSE in this repo.

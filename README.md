@@ -10,7 +10,7 @@ you need to have Docker [installed on your machine](http://www.docker.io/getting
 In this container:
 
 - EiffelStudio 7.3 (GPL version) from http://www.eiffelstudio.com/
-- Fedora 19 base image from https://index.docker.io/u/mattdm/fedora/
+- Fedora 20 base image from https://index.docker.io/u/mattdm/fedora/
 - A modern version of Git
 - [tito](https://github.com/dgoodwin/tito) for building RPMs
 - All dependencies needed for the above to be self-sufficient

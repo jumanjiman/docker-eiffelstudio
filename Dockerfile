@@ -2,13 +2,16 @@
 # http://www.eiffelstudio.com/
 
 # https://index.docker.io/u/mattdm/fedora/
-FROM mattdm/fedora:f19
+FROM mattdm/fedora:f20
 
 # http://jumanjiman.github.io/
 MAINTAINER Paul Morgan
 
 # Update the base image.
 #RUN yum -y update
+
+# Work around https://bugzilla.redhat.com/show_bug.cgi?id=1066983
+RUN yum -y remove vim-minimal; yum clean all
 
 # Install compiler collection and debugger.
 RUN yum -y install gcc gdb

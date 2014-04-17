@@ -9,4 +9,8 @@ build:
         code: docker info
     - script:
         name: build docker image
-        code: docker build --rm -t jumanjiman/eiffelstudio .
+        code: |
+          pushd src/
+          hash=$(git log -n1 --pretty=%h -- .)
+          docker pull jumanjiman/eiffelstudio:$hash || docker build --rm -t jumanjiman/eiffelstudio:$hash .
+          popd

@@ -31,6 +31,9 @@ ADD http://ftp.eiffel.com/pub/download/13.11/Eiffel_13.11_gpl_93542-linux-x86-64
 RUN tar xvjf /tmp/Eiffel_13.11_gpl_93542-linux-x86-64.tar.bz2 -C /usr/local/
 RUN rm -f /tmp/Eiffel_13.11_gpl_93542-linux-x86-64.tar.bz2
 
+# Identify build date of docker image.
+RUN echo $(date --rfc-3339=seconds) > /etc/image-build-date
+
 # Use an unprivileged user inside the container.
 RUN useradd eiffel
 USER eiffel

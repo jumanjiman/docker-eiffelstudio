@@ -34,7 +34,17 @@ from your host OS insider the container at `/tmp`. The mount
 ensures that any work you do inside the container is available
 in the host OS.
 
-`docker run -i -t -v /tmp:/tmp jumanjiman/eiffelstudio`
+`docker run -i -t -v /tmp:/tmp jumanjiman/eiffelstudio:latest`
+
+
+## Tags
+
+* `latest`: the most recent build of the docker image
+* `<hash>`: the image corresponding to particular git commit of `src/` dir
+
+Tags correlate image version to source.
+Discover the build date and time by inspecting `/etc/image-build-date`.
+
 
 ## Inspection
 

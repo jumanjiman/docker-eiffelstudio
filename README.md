@@ -4,12 +4,12 @@
 
 ## About
 
-This container is available [in the Docker Index](https://index.docker.io/u/jumanjiman/eiffelstudio/).
+This image is available [in the Docker Index](https://index.docker.io/u/jumanjiman/eiffelstudio/).
 
 In order to use `jumanjiman/eiffelstudio`,
 you need to have Docker [installed on your machine](http://www.docker.io/gettingstarted/#anchor-0).
 
-In this container:
+In this image:
 
 - EiffelStudio 13.11 (GPL version) from http://www.eiffelstudio.com/
 - Fedora 20 base image from https://index.docker.io/u/mattdm/fedora/
@@ -17,14 +17,14 @@ In this container:
 - [tito](https://github.com/dgoodwin/tito) for building RPMs
 - All dependencies needed for the above to be self-sufficient
 
-This Docker container enables you to safely experiment with
+This Docker image enables you to safely experiment with
 EiffelStudio in an isolated environment that does not
 impact the packages on your host. The container is completely
 self-sufficient and isolated from your host OS. You can
 [throw away the container](https://github.com/jumanjiman/docker-eiffelstudio/tree/readme#cleanup)
 when you're done experimenting.
 
-I built this container so that I can quickly build
+I built this image so that I can quickly build
 [wd](https://github.com/jumanjiman/wd) on any host that has Docker installed.
 
 ## Recommended usage
@@ -89,7 +89,7 @@ Why `/tmp`? Why the `eiffel` user?
 
 ## Cleanup
 
-To throw away this container, run:
+To throw away this image, run:
 
     docker rmi jumanjiman/eiffelstudio
 
@@ -100,7 +100,7 @@ To throw away cached copies of containers you no longer use:
 
 ## License
 
-The version of EiffelStudio in this container is GPL (unspecified variant).
+The version of EiffelStudio in this image is GPL (unspecified variant).
 See LICENSE.eiffelstudio in this repo for governance.
 
 :warning: If you compile source code with this container,
@@ -110,6 +110,6 @@ purchase a commercial license for EiffelStudio from http://eiffel.com.
 
 All other files in this Git repo are licensed under the MIT license.
 That means you can use this Dockerfile and scripts to
-create a private container with
+create a private image with
 your commercially-licensed copy of EiffelStudio.
 See LICENSE.mit in this repo for governance.

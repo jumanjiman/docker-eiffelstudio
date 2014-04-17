@@ -9,7 +9,7 @@ you need to have Docker [installed on your machine](http://www.docker.io/getting
 
 In this container:
 
-- EiffelStudio 7.3 (GPL version) from http://www.eiffelstudio.com/
+- EiffelStudio 13.11 (GPL version) from http://www.eiffelstudio.com/
 - Fedora 20 base image from https://index.docker.io/u/mattdm/fedora/
 - A modern version of Git
 - [tito](https://github.com/dgoodwin/tito) for building RPMs
@@ -85,38 +85,13 @@ To throw away cached copies of containers you no longer use:
 
     docker rm $(docker ps -a -q)
 
-## To-do
-
-Extend the Dockerfile to create an Ubuntu image based on instructions
-at http://www.eiffelroom.org/article/installing_eiffelstudio_on_ubuntu
-
-## Known issues
-
-### Why does this Git repo include a tarball of EiffelStudio?
-
-One can use `apt-get` to install the GPL version of EiffelStudio on
-Ubuntu (see http://www.eiffelroom.org/article/installing_eiffelstudio_on_ubuntu),
-but there is currently no curlable way to retrieve the bits on Fedora.
-IOW, I had to manually grab the tarball at the moment.
-If you have a better approach, please let me know via a
-[new issue](https://github.com/jumanjiman/docker-eiffelstudio/issues/new)
-or a pull request.
-
-### I see an error when starting the container
-
-When I run the container, I get this error:
-
-    lxc-start: No such file or directory - stat(/proc/<pid>/root/dev//console)
-
-I don't know yet why this appears, but it seems to have
-no effect on the container itself.
 
 ## License
 
 The version of EiffelStudio in this container is GPL (unspecified variant).
 See LICENSE.eiffelstudio in this repo for governance.
 
-**Note**: If you compile source code with this container,
+:warning: If you compile source code with this container,
 your binaries include GPL code and therefore are licensed under the GPL.
 If you want your binaries to have any other license,
 purchase a commercial license for EiffelStudio from http://eiffel.com.

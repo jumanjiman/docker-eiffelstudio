@@ -1,0 +1,12 @@
+box: wercker-labs/docker
+build:
+  steps:
+    - script:
+        name: print the docker version
+        code: docker version
+    - script:
+        name: print system-wide docker info
+        code: docker info
+    - script:
+        name: build docker image
+        code: docker build --rm -t jumanjiman/eiffelstudio .

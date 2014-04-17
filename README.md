@@ -1,5 +1,7 @@
 # EiffelStudio IDE in a Docker container
 
+[![wercker status](https://app.wercker.com/status/5d48a9a6a8f3ed123f4d2980213362e0/s/master "wercker status")](https://app.wercker.com/project/bykey/5d48a9a6a8f3ed123f4d2980213362e0)
+
 ## About
 
 This container is available [in the Docker Index](https://index.docker.io/u/jumanjiman/eiffelstudio/).
